@@ -14,7 +14,7 @@ const checkButton = document.getElementById("checkButton");
 checkButton.addEventListener("click", () => {
   const inputField = document.getElementById("numberInput").value;
 //   const input = inputField.value;
-  const num = parseInt(input, 10);
+  const num = parseInt(inputField, 10);
 
   if (isNaN(num)) {
       Swal.fire({
@@ -37,6 +37,6 @@ checkButton.addEventListener("click", () => {
   })
   .then(() => {
     //   inputField.value = "";
-    document.getElementById('inputField').value = '';
+    document.getElementById('numberInput').value = '';
   });
 });
